@@ -1,7 +1,7 @@
 {
   "name": "family-expense-insights",
   "version": "1.0.0",
-  "description": "",
+  "description": "Family Expense Insights is a web application that provides insights into family-level and member-level financial data. It allows users to analyze member contributions to expenses, optimize savings, and manage transactions effectively.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
