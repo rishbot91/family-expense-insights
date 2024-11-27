@@ -8,7 +8,7 @@ const familySchema = new mongoose.Schema({
   loanPayments: { type: Number, required: true },
   creditCardSpending: { type: Number, required: true },
   dependents: { type: Number, required: true },
-  financialGoalsMet: { type: Number, required: true },
+  financialGoalsMet: { type: Number, required: true }, // percentage
 });
 
 module.exports = mongoose.model('Family', familySchema);
