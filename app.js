@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const connectDB = require('./config/db');
 const familyRoutes = require('./routes/familyRoutes'); // Import the family routes
+const memberRoutes = require('./routes/memberRoutes'); // Import the member routes
+const transactionRoutes = require('./routes/transactionRoutes'); // Import the transaction routes
+
 
 const app = express();
 
@@ -15,6 +18,12 @@ app.use(bodyParser.json());
 
 // Use the family routes
 app.use('/api/family', familyRoutes);
+
+// Use the member routes
+app.use('/api/member', memberRoutes);
+
+// Use the transaction routes
+app.use('/api/transaction', transactionRoutes);
 
 // Test route
 app.get('/', (req, res) => {
